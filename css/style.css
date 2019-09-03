@@ -1,0 +1,1087 @@
+/* Scss Document */
+/* VAR */
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  /*font-family: 'Raleway', sans-serif;*/
+}
+
+header {
+  background-color: #fff;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+header .logo {
+  width: 100%;
+  max-width: 250px;
+  padding: 30px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+header .Mainmenu {
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
+}
+
+header .Mainmenu li {
+  display: inline-block;
+  padding-top: 40px;
+  margin-right: 10px;
+}
+
+header .Mainmenu li a {
+  color: #8a7a67;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+header .Mainmenu li a:hover, header .Mainmenu li a:focus, header .Mainmenu li a.active {
+  color: #ffa200;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid #ffa200;
+}
+
+header .Mainmenu li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 992px) {
+  header .Mainmenu li {
+    padding-top: 30px;
+  }
+}
+
+.Mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .Mob {
+    display: inline;
+  }
+  .Mob .mobMenu {
+    width: 40px;
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+    z-index: 997;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 32px;
+  }
+  .Mob .mobMenu span {
+    height: 2px;
+    background-color: #8a7a67;
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  .Mob .open .lone {
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    -webkit-transform-origin: top right;
+    -o-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+  }
+  .Mob .open .ltwo {
+    opacity: 0;
+  }
+  .Mob .open .lthree {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -webkit-transform-origin: top right;
+    -o-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+  }
+}
+
+.menuContent {
+  width: 80vw;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  right: -80vw;
+  top: 0;
+  z-index: 996;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuContent .Mainmenu {
+  text-align: left;
+  padding: 0 30px;
+  margin-top: 120px;
+}
+
+.menuContent .Mainmenu li {
+  padding-top: 0;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.isopen {
+  right: 0;
+}
+
+.TopSlider .item {
+  height: 680px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 230px;
+  padding-left: 120px;
+}
+
+.TopSlider .item h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 48px;
+  margin-bottom: 5px;
+}
+
+.TopSlider .item p {
+  color: #ffa200;
+  font-size: 23px;
+}
+
+@media (max-width: 767px) {
+  .TopSlider .item {
+    padding-top: 80px;
+    height: 340px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contactinfo {
+  background-color: #faf8f6;
+  padding: 20px 0;
+}
+
+.contactinfo img {
+  margin-right: 15px;
+}
+
+.contactinfo table {
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .contactinfo table {
+    margin: 0;
+  }
+  .contactinfo table td {
+    padding: 10px 0;
+  }
+}
+
+.contactinfo p {
+  color: #a39896;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.contactinfo h4 {
+  color: #ffa200;
+  margin: 0;
+  font-weight: bold;
+}
+
+@media (min-width: 767px) {
+  .contactinfo .center-w-border {
+    border-right: 1px solid #eee9e4;
+    border-left: 1px solid #eee9e4;
+  }
+}
+
+.ourhistory {
+  padding: 100px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.ourhistory h1 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ourhistory h1 span {
+  color: #ffa200;
+}
+
+.ourhistory .content {
+  margin: 30px 0;
+}
+
+.ourhistory .content p {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ourhistory .content p a {
+  color: #ffa200;
+}
+
+.ourhistory .content p a:hover, .ourhistory .content p a:focus {
+  text-decoration: none;
+}
+
+.btn-orange {
+  background-color: #ffa200;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 30px;
+  border: 1px solid #ffa200;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-orange:hover, .btn-orange:focus {
+  text-decoration: none;
+  color: #ffa200;
+  background-color: transparent;
+}
+
+.btn-brown {
+  background-color: #8a7a67;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 30px;
+  border: 1px solid #8a7a67;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-brown:hover, .btn-brown:focus {
+  text-decoration: none;
+  color: #8a7a67;
+  background-color: transparent;
+}
+
+.btn-white {
+  background-color: white;
+  color: #ffa200;
+  border-radius: 4px;
+  padding: 10px 30px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-white:hover, .btn-white:focus {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.aboutuspage {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.aboutuspage .title h1 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-align: center;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.aboutuspage .title h1 span {
+  color: #ffa200;
+}
+
+.aboutuspage a {
+  color: #ffa200;
+}
+
+.aboutuspage a:hover, .aboutuspage a:focus {
+  text-decoration: none;
+}
+
+.aboutuspage .content {
+  padding: 70px 60px;
+}
+
+.aboutuspage .text {
+  margin: 50px 0;
+  color: #7a7c7c;
+}
+
+.aboutuspage .text h1, .aboutuspage .text h2, .aboutuspage .text h3, .aboutuspage .text h4, .aboutuspage .text h5, .aboutuspage .text h6 {
+  color: #8a7a67;
+  font-weight: bold;
+}
+
+.aboutuspage .box {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .aboutuspage .content {
+    padding: 70px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutuspage .content {
+    padding: 0px 60px;
+  }
+}
+
+.contactuspage {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.contactuspage .title h1 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.contactuspage .title h1 span {
+  color: #ffa200;
+}
+
+.contactuspage .title p {
+  max-width: 500px;
+  margin: 15px auto;
+  text-align: center;
+  color: #7a7c7c;
+}
+
+.contactuspage form {
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.contactuspage form .input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e0d3b8;
+  color: #666;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactuspage form .input:focus {
+  border: 1px solid #8a7a67;
+}
+
+.contactuspage form .submit-btn {
+  width: 100%;
+}
+
+.ourproducts {
+  background-color: #faf8f6;
+}
+
+.ourproducts .content {
+  padding: 100px 30px;
+}
+
+.ourproducts .title p {
+  color: #8a7a67;
+  margin-bottom: 0;
+}
+
+.ourproducts .title h1 {
+  color: #8a7a67;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ourproducts .title h1 span {
+  color: #ffa200;
+}
+
+.ourproducts .text {
+  margin: 50px 0;
+  color: #7a7c7c;
+}
+
+.right-custom-border {
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 540px;
+  padding: 0;
+}
+
+.right-custom-border img {
+  height: 100%;
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .right-custom-border img {
+    display: none;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.recentevents {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.recentevents .title {
+  margin-bottom: 30px;
+}
+
+.recentevents .title h1 {
+  color: #8a7a67;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.recentevents .title h1 span {
+  color: #ffa200;
+}
+
+.recentevents .content p {
+  color: #7a7c7c;
+}
+
+.recentevents .content .date {
+  color: #ffa200;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.recentevents .content h2 {
+  color: #8a7a67;
+  margin-top: 0px;
+}
+
+.recentevents a:hover, .recentevents a:focus {
+  text-decoration: none;
+}
+
+.recentevents .small-events-box {
+  margin-bottom: 30px;
+  height: 96px;
+  background-color: #f3f1f0;
+}
+
+.recentevents .small-events-box div {
+  display: inline-block;
+}
+
+.recentevents .small-events-box div .cover {
+  position: relative;
+  width: 108px;
+  min-height: 96px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.recentevents .small-events-box div p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.recentevents .small-events-box .right-block {
+  float: right;
+}
+
+.recentevents .small-events-box .left-block {
+  width: 108px;
+  float: left;
+}
+
+.recentevents .small-events-box .center-block {
+  width: calc(100% - 143px);
+  float: left;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.recentevents .small-events-box .titlemini {
+  color: #8a7a67;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.recentevents .small-events-box .date {
+  color: #ffa200;
+  margin-top: 0px;
+}
+
+.recentevents .small-events-box .text {
+  color: #7a7c7c;
+}
+
+.ourpartners {
+  padding: 100px 0;
+  background-color: #faf8f6;
+}
+
+.ourpartners .title {
+  margin-bottom: 30px;
+}
+
+.ourpartners .title h1 {
+  color: #8a7a67;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ourpartners .title h1 span {
+  color: #ffa200;
+}
+
+.ourpartners .partnersSlider {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.ourpartners .partnersSlider img {
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ourpartners .partnersSlider img:hover {
+  opacity: 1;
+}
+
+.ourcatalogue {
+  padding: 100px 0;
+  background-color: #ffa200;
+  color: white;
+  text-align: center;
+}
+
+.ourcatalogue h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ourcatalogue .content {
+  margin: 30px 0;
+}
+
+.ourcatalogue .content p {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #4f4a44;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer .MenuFooter {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer .MenuFooter li {
+  display: inline-block;
+  margin: 5px;
+}
+
+footer .MenuFooter li a {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .MenuFooter li a:hover, footer .MenuFooter li a:focus {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer p {
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.elevator-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  color: #999;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.elevator-button svg {
+  width: 50px;
+  height: 50px;
+  fill: #999;
+}
+
+.elevator-button:hover {
+  opacity: 1;
+}
+
+.productspage {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.productspage .title {
+  margin-bottom: 100px;
+}
+
+.productspage .title h1 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.productspage .title h1 span {
+  color: #ffa200;
+}
+
+.productspage .title p {
+  max-width: 580px;
+  margin: 15px auto;
+  text-align: center;
+  color: #7a7c7c;
+}
+
+.productspage .title p a {
+  color: #ffa200;
+}
+
+.productspage .title p a:hover, .productspage .title p a:focus {
+  text-decoration: none;
+}
+
+.productspage .productBox {
+  background-color: #faf8f6;
+  padding: 40px 0px;
+  margin-bottom: 30px;
+}
+
+.productspage .productBox .title {
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.productspage .productBox .title h4 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.productspage .productBox .title h4 span {
+  color: #ffa200;
+}
+
+.productspage .productBox .title p {
+  margin: 0px;
+  text-align: left;
+  color: #7a7c7c;
+  font-size: 10px;
+}
+
+.productspage .productBox .title p a {
+  color: #ffa200;
+}
+
+.productspage .productBox .title p a:hover, .productspage .productBox .title p a:focus {
+  text-decoration: none;
+}
+
+.productspage .productBox .img-warp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.productspage .productBox .text {
+  padding: 0 20px;
+  font-size: 13px;
+  color: #7a7c7c;
+}
+
+.productspage .productBox .readmore {
+  margin-left: 20px;
+  color: #8a7a67;
+  margin-top: 10px;
+  border-bottom: 1px solid #c7bfb7;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.productspage .productBox .readmore:hover, .productspage .productBox .readmore:focus {
+  text-decoration: none;
+}
+
+.newspage {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.newspage .title {
+  margin-bottom: 100px;
+}
+
+.newspage .title h1 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.newspage .title h1 span {
+  color: #ffa200;
+}
+
+.newspage .title p {
+  max-width: 580px;
+  margin: 15px auto;
+  text-align: center;
+  color: #7a7c7c;
+}
+
+.newspage .title p a {
+  color: #ffa200;
+}
+
+.newspage .title p a:hover, .newspage .title p a:focus {
+  text-decoration: none;
+}
+
+.newspage .newsBox {
+  background-color: #faf8f6;
+  padding: 0px 0px 40px 0px;
+  margin-bottom: 30px;
+}
+
+.newspage .newsBox .title {
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.newspage .newsBox .title h4 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.newspage .newsBox .title h4 span {
+  color: #ffa200;
+}
+
+.newspage .newsBox .title p {
+  margin: 0px;
+  text-align: left;
+  color: #7a7c7c;
+  font-size: 10px;
+}
+
+.newspage .newsBox .title p a {
+  color: #ffa200;
+}
+
+.newspage .newsBox .title p a:hover, .newspage .newsBox .title p a:focus {
+  text-decoration: none;
+}
+
+.newspage .newsBox .news-img-warp {
+  height: 250px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.newspage .newsBox .text {
+  padding: 0 20px;
+  font-size: 13px;
+  color: #7a7c7c;
+}
+
+.newspage .newsBox .readmore {
+  margin-left: 20px;
+  color: #8a7a67;
+  margin-top: 10px;
+  border-bottom: 1px solid #c7bfb7;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.newspage .newsBox .readmore:hover, .newspage .newsBox .readmore:focus {
+  text-decoration: none;
+}
+
+.subMenu {
+  background-color: #faf8f6;
+  padding: 20px 30px;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  margin-top: -1px;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.subMenu a {
+  color: #8a7a67;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  font-weight: 700;
+  border-right: 1px solid #eee9e4;
+}
+
+.subMenu a:hover, .subMenu a.active {
+  color: #ffa200;
+  text-decoration: none;
+}
+
+.subMenu a:focus {
+  text-decoration: none;
+}
+
+.subMenu a:last-child {
+  border-right: 0;
+}
+
+.productspage-in {
+  background-color: #fff;
+  padding: 60px 0 0 0;
+}
+
+.productspage-in #features {
+  /* max-width: 1170px;
+        margin: 0 auto;
+        padding: 15px;*/
+}
+
+.productspage-in #features p {
+  color: #7a7c7c;
+}
+
+.productspage-in #features li {
+  color: #7a7c7c;
+  margin-bottom: 10px;
+}
+
+.productspage-in #features h4 {
+  color: #8a7a67;
+  font-weight: 700;
+}
+
+.productspage-in .title {
+  /*padding:0 20px;*/
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.productspage-in .title h1 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.productspage-in .title h1 span {
+  color: #ffa200;
+}
+
+.productspage-in .title p {
+  margin: 0px;
+  text-align: left;
+  color: #8a7a67;
+}
+
+.executions {
+  background-color: #faf8f6;
+  padding: 100px 0;
+  color: #7a7c7c;
+}
+
+.executions h4 {
+  color: #8a7a67;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.executions ul.Panels {
+  padding-left: 15px;
+}
+
+.configurations {
+  background-color: #fff;
+  padding: 100px 0 50px 0;
+  color: #7a7c7c;
+}
+
+.configurations h4 {
+  color: #8a7a67;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.configurations table {
+  border: 1px solid #c1b9b2;
+}
+
+.configurations table td {
+  text-align: center;
+}
+
+.configurations table thead {
+  background-color: #e6e0da;
+  font-weight: 700;
+}
+
+.configurations table thead td {
+  padding: 20px 8px;
+}
+
+.configurations table tbody tr:hover {
+  background-color: #faf8f6;
+}
+
+.configurations table tbody td {
+  border-top: 1px solid #c1b9b2;
+  padding: 20px 8px;
+}
+
+.gallery {
+  background-color: #fff;
+  padding: 50px 0px 100px 0;
+}
+
+.gallery .title {
+  margin-bottom: 100px;
+}
+
+.gallery .title h1 {
+  color: #8a7a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.gallery .title h1 span {
+  color: #ffa200;
+}
+
+.gallery .title p {
+  max-width: 580px;
+  margin: 15px auto;
+  text-align: center;
+  color: #7a7c7c;
+}
+
+.gallery .title p a {
+  color: #ffa200;
+}
+
+.gallery .title p a:hover, .gallery .title p a:focus {
+  text-decoration: none;
+}
+
+.gallery h4 {
+  color: #8a7a67;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.gallery .productBox {
+  background-color: #faf8f6;
+  padding: 40px 0px;
+  margin-bottom: 30px;
+}
+
+.gallery .productBox .img-warp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gallery .productBox .img-warp a {
+  display: block;
+  width: 100%;
+}
+
+.gallery .productBox p {
+  color: #7a7c7c;
+  font-size: 10px;
+  padding: 0 30px;
+}
